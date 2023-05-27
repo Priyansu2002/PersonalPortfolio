@@ -1,0 +1,353 @@
+body{
+  background-color:#fff;
+  overflow:visible;
+}
+.logo{
+    font-size:45px;
+    color:#ff7f50;
+    text-decoration:none;
+    font-weight:600;
+    cursor:default;
+    opacity:0;
+    animation:slideRight 1s ease forwards;
+
+}
+  
+.header{
+    position:absolute;
+    top:0;
+    left:10px;
+    width:96%;
+    padding:20px 10px;
+    padding-right:90px;
+    background:transparent;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+
+   
+}
+  .navbar a{
+    display:inline-block;
+    font-size:18px;
+    color:#ff7f50;
+    text-decoration:none;
+    font-weight:500;
+    margin-left:35px;
+    transition: .3s;
+    opacity:0;
+    animation:slidetop 0.5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+.navbar a:hover{
+  color:#5b7c99;
+}
+
+  
+  .social-media a i:hover {
+    color: #ff7f50;
+    transform: scale(1.2);
+  }
+  
+  h3 span {
+    display: inline-block;
+    animation: slideIn 1s forwards;
+  }
+  .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+  }
+  
+  .home-content {
+    width: 50%;
+  }
+  
+  .home-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .home-content h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .home-content h3 span {
+    color: #ff7f50;
+  }
+  
+  .social-media {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff6347;
+  }
+  
+  .home-img img {
+    padding-left:290px;
+    padding-top:60px;
+    max-width:70%;
+  }
+  .contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .contact form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact form button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .contact form input,
+    .contact form textarea {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .contact form textarea {
+    height: 120px;
+  }
+  
+  .contact form button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact form button:hover {
+    background-color: #34495e;
+  }
+  
+  
+  .contact form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .contact {
+    background-color:#fff;
+    height:100%;
+    width:100%;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .contact form textarea {
+    height: 120px;
+  }
+  
+  .contact form button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact form button:hover {
+    background-color: #34495e;
+  }
+  
+  
+  .contact form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .contact {
+    background-color: #f2f2f2;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .contact form input,
+  .contact form textarea,
+  .contact form button {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contact form input:focus,
+  .contact form textarea:focus {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  
+  .contact form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .contact form button:disabled:hover {
+    background-color: #ccc;
+  }
+  
+  .contact form button:enabled:hover {
+    transform: scale(1.05);
+  }
+  
+  .contact form button:enabled:active {
+    transform: scale(0.95);
+  }
+  
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      text-align: center;
+      padding: 50px;
+    }
+  
+    .home-content {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  
+    .home-img {
+      max-width: 70%;
+    }
+  }
+  @keyframes slideRight{
+    0%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+
+    }
+}
+@keyframes slidetop{
+  0%{
+      transform:translateY(100px);
+      opacity:0;
+  }
+  100%{
+      transform:translateY(0);
+      opacity:1;
+
+  }
+}
+@keyframes navLinkAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
